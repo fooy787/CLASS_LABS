@@ -1,0 +1,5 @@
+var R = nre Regex(@"(?xs) /\* .*? \*/ | //[^\n]*")
+-Specify comment block or comment lines in a regex.
+
+("(\\"|[^"])*"|'(\\"|[^"])*')
+-Specify quotes inside of a string like "He said "Hello, how are you?""

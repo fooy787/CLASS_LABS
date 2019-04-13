@@ -1,0 +1,2 @@
+SIMD: 301 usec
+NonSIMD: 1813 usec

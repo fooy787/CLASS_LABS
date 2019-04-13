@@ -1,0 +1,6 @@
+C:\Users\chase_000\Desktop\Compiler\Lab 10\LR0\LR0\bin\Debug\LR0.exe
+C:\Users\chase_000\Desktop\Compiler\Lab 10\LR0\LR0\bin\Debug\LR0.pdb
+C:\Users\chase_000\Desktop\Compiler\Lab 10\LR0\LR0\obj\Debug\LR0.csprojAssemblyReference.cache
+C:\Users\chase_000\Desktop\Compiler\Lab 10\LR0\LR0\obj\Debug\LR0.csproj.CoreCompileInputs.cache
+C:\Users\chase_000\Desktop\Compiler\Lab 10\LR0\LR0\obj\Debug\LR0.exe
+C:\Users\chase_000\Desktop\Compiler\Lab 10\LR0\LR0\obj\Debug\LR0.pdb

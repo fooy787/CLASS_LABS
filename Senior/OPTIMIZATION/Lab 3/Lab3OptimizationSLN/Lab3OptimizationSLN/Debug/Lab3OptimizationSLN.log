@@ -1,0 +1,6 @@
+﻿  huff.cpp
+c:\users\chase_000\desktop\optimization\lab 3\lab3optimizationsln\lab3optimizationsln\bitstream.h(64): warning C4244: 'return': conversion from 'std::streamoff' to '::size_t', possible loss of data
+c:\users\chase_000\desktop\optimization\lab 3\lab3optimizationsln\lab3optimizationsln\huff.cpp(98): warning C4244: '=': conversion from 'std::streamoff' to 'int', possible loss of data
+c:\users\chase_000\desktop\optimization\lab 3\lab3optimizationsln\lab3optimizationsln\huff.cpp(103): warning C4101: 'ch': unreferenced local variable
+  Lab3OptimizationSLN.vcxproj -> C:\Users\chase_000\Desktop\OPTIMIZATION\Lab 3\Lab3OptimizationSLN\Debug\Lab3OptimizationSLN.exe
+  Lab3OptimizationSLN.vcxproj -> C:\Users\chase_000\Desktop\OPTIMIZATION\Lab 3\Lab3OptimizationSLN\Debug\Lab3OptimizationSLN.pdb (Partial PDB)

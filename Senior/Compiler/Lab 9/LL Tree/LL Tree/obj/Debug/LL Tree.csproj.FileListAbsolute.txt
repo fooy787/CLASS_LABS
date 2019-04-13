@@ -1,0 +1,6 @@
+C:\Users\chase_000\Desktop\Compiler\Lab 9\LL Tree\LL Tree\bin\Debug\LL Tree.exe
+C:\Users\chase_000\Desktop\Compiler\Lab 9\LL Tree\LL Tree\bin\Debug\LL Tree.pdb
+C:\Users\chase_000\Desktop\Compiler\Lab 9\LL Tree\LL Tree\obj\Debug\LL Tree.csprojAssemblyReference.cache
+C:\Users\chase_000\Desktop\Compiler\Lab 9\LL Tree\LL Tree\obj\Debug\LL Tree.csproj.CoreCompileInputs.cache
+C:\Users\chase_000\Desktop\Compiler\Lab 9\LL Tree\LL Tree\obj\Debug\LL Tree.exe
+C:\Users\chase_000\Desktop\Compiler\Lab 9\LL Tree\LL Tree\obj\Debug\LL Tree.pdb

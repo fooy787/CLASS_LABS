@@ -1,0 +1,6 @@
+C:\Users\chase_000\Desktop\Compiler\Lab 6\First\First\bin\Debug\First.exe
+C:\Users\chase_000\Desktop\Compiler\Lab 6\First\First\bin\Debug\First.pdb
+C:\Users\chase_000\Desktop\Compiler\Lab 6\First\First\obj\Debug\First.csprojResolveAssemblyReference.cache
+C:\Users\chase_000\Desktop\Compiler\Lab 6\First\First\obj\Debug\First.csproj.CoreCompileInputs.cache
+C:\Users\chase_000\Desktop\Compiler\Lab 6\First\First\obj\Debug\First.exe
+C:\Users\chase_000\Desktop\Compiler\Lab 6\First\First\obj\Debug\First.pdb

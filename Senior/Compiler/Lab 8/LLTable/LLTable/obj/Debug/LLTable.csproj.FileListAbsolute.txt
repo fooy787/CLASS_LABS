@@ -1,0 +1,6 @@
+C:\Users\chase_000\Desktop\Compiler\Lab 8\LLTable\LLTable\obj\Debug\LLTable.csprojResolveAssemblyReference.cache
+C:\Users\chase_000\Desktop\Compiler\Lab 8\LLTable\LLTable\obj\Debug\LLTable.csproj.CoreCompileInputs.cache
+C:\Users\chase_000\Desktop\Compiler\Lab 8\LLTable\LLTable\bin\Debug\LLTable.exe
+C:\Users\chase_000\Desktop\Compiler\Lab 8\LLTable\LLTable\bin\Debug\LLTable.pdb
+C:\Users\chase_000\Desktop\Compiler\Lab 8\LLTable\LLTable\obj\Debug\LLTable.exe
+C:\Users\chase_000\Desktop\Compiler\Lab 8\LLTable\LLTable\obj\Debug\LLTable.pdb

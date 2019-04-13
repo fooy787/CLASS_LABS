@@ -1,0 +1,5 @@
+﻿  SSE3.cpp
+c:\users\chase_000\desktop\optimization\lab 6\sse3\sse3\sse3.cpp(50): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\chase_000\desktop\optimization\lab 6\sse3\sse3\sse3.cpp(52): warning C4018: '<': signed/unsigned mismatch
+  SSE3.vcxproj -> C:\Users\chase_000\Desktop\OPTIMIZATION\Lab 6\SSE3\Debug\SSE3.exe
+  SSE3.vcxproj -> C:\Users\chase_000\Desktop\OPTIMIZATION\Lab 6\SSE3\Debug\SSE3.pdb (Partial PDB)

@@ -1,0 +1,49 @@
+e32:SSL receive failed.\nread: SSL_read encountered an EOF.: unknown network error 0\n
+e32:connect: 127.0.0.1:1666: WSAECONNREFUSED\n
+e32:connect: 127.0.0.1:1666: WSAECONNREFUSED\n
+p1:-1 0 opened and not being changed
+p1:-1 0 opened and not being changed
+p1:-1 0 Change 1157 created with 2 open file(s).
+p1:-1 0 Submitting change 1157.
+p1:-1 0 Locking 2 files ...
+p1:-1 0 add //etgg3800_17_18/etgg3800_17_18/MannequinRoadwork/Assets/Level/Level3.unity#1
+p1:-1 0 add //etgg3800_17_18/etgg3800_17_18/MannequinRoadwork/Assets/Level/Level3.unity.meta#1
+p1:-1 0 Change 1157 submitted.
+e32:SSL receive failed.\nread: SSL_read encountered an EOF.: unknown network error 0\n
+C:/Users/chase_000/Desktop/3801 Repository Perforce/etgg3800_17_18/MannequinRoadwork/Assets/... - no such file(s).
+
+w1:C:/Users/chase_000/Desktop/3801 Repository Perforce/etgg3800_17_18/MannequinRoadwork/Assets/... - no such file(s).\n
+Unhandled exception: Readfile from pipe failed. GLE=The pipe has been ended.
+
+C:/Users/chase_000/Desktop/3801 Repository Perforce/etgg3800_17_18/MannequinRoadwork/Assets/... - no such file(s).
+
+w1:C:/Users/chase_000/Desktop/3801 Repository Perforce/etgg3800_17_18/MannequinRoadwork/Assets/... - no such file(s).\n
+p1:-1 0 Change 1323 created with 3 open file(s).
+p1:-1 0 Submitting change 1323.
+p1:-1 0 Locking 3 files ...
+p1:-1 0 add //etgg3800_17_18/etgg3800_17_18/MannequinRoadwork/Assets/Level.meta#1
+p1:-1 0 add //etgg3800_17_18/etgg3800_17_18/MannequinRoadwork/Assets/Level/Level3.unity#1
+p1:-1 0 add //etgg3800_17_18/etgg3800_17_18/MannequinRoadwork/Assets/Level/Level3.unity.meta#1
+p1:-1 1 Change 1323 submitted.
+p1:-1 1 Change 1324 created with 2 open file(s).
+p1:-1 1 Submitting change 1324.
+p1:-1 1 Locking 2 files ...
+p1:-1 1 edit //etgg3800_17_18/etgg3800_17_18/MannequinRoadwork/Assets/Level/Level3.unity#2
+p1:-1 1 edit //etgg3800_17_18/etgg3800_17_18/MannequinRoadwork/Assets/Level/Level3.unity.meta#2
+p1:-1 1 Change 1324 submitted.
+p1:-1 1 Change 1325 created with 2 open file(s).
+p1:-1 1 Submitting change 1325.
+p1:-1 1 Locking 2 files ...
+p1:-1 1 add //etgg3800_17_18/etgg3800_17_18/MannequinRoadwork/Assets/Level/level 4.unity#1
+p1:-1 1 add //etgg3800_17_18/etgg3800_17_18/MannequinRoadwork/Assets/Level/level 4.unity.meta#1
+p1:-1 1 Change 1325 submitted.
+e32:connect: 127.0.0.1:1666: WSAECONNREFUSED\n
+Unhandled exception: Readfile from pipe failed. GLE=The pipe has been ended.
+
+e32:connect: 127.0.0.1:1666: WSAECONNREFUSED\n
+Unhandled exception: Readfile from pipe failed. GLE=The pipe has been ended.
+
+e32:connect: 127.0.0.1:1666: WSAECONNREFUSED\n
+e32:connect: 127.0.0.1:1666: WSAECONNREFUSED\n
+Unhandled exception: Readfile from pipe failed. GLE=The pipe has been ended.
+

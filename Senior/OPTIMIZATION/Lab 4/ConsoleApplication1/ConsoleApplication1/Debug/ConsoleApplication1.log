@@ -1,0 +1,7 @@
+﻿  loudnessxmm.cpp
+c:\users\chase_000\desktop\optimization\lab 4\consoleapplication1\consoleapplication1\wave.h(93): warning C4244: 'initializing': conversion from 'std::streamoff' to '::size_t', possible loss of data
+c:\users\chase_000\desktop\optimization\lab 4\consoleapplication1\consoleapplication1\loudnessxmm.cpp(12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chase_000\desktop\optimization\lab 4\consoleapplication1\consoleapplication1\loudnessxmm.cpp(13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chase_000\desktop\optimization\lab 4\consoleapplication1\consoleapplication1\loudnessxmm.cpp(29): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  ConsoleApplication1.vcxproj -> C:\Users\chase_000\Desktop\OPTIMIZATION\Lab 4\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Users\chase_000\Desktop\OPTIMIZATION\Lab 4\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)

@@ -1,0 +1,27 @@
+x = 7 * 4
+Tokens: ID EQ NUM MULOP NUM
+
+Stack: S sem1 aof' ID
+
+1) Top of stack terminal & next token == top of stack -> match and pop
+2) Top of stack non terminal & table[n][t] not blank -> pop table
+3) Top of stack nonterminal & table[n][t] empty-> error
+4) Top of stack & next terminal doesnt match -> error
+
+class Node
+{
+	sym: string;
+	toke: null/Token
+	ch = listofNode
+}
+stack: 
+	ID EQ NUM SEMI $
+
+     1S
+2stmt 	3semi 	4s
+5aof
+6ID      7AOF'
+      8EQ    9e
+    10t 11e'
+ 12f 13t'
+14num

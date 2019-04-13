@@ -1,0 +1,20 @@
+e -> e + t | t
+t -> t * f | f
+f -> num | (e)
+
+e -> te'
+e' -> +te' | lambda
+t -> ft'
+t' -> *ft' | lambda
+f -> num | (e) | idx
+
+s -> stmt_list
+stmt_list -> stmt stmt_list | lambda
+stmt -> cond | loop | func_call | assign
+cond -> if (e) {stmt_list} | if(e) {stmt_list} else {}
+loop -> while (e) {stmt_list} | do {stmt_list} while (e)
+func_call -> id()
+assign -> id = e 
+
+s -> A|x
+A -> y|z

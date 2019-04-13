@@ -1,0 +1,203 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+rootInode           0x80              disk.o
+superblock          0x400             disk.o
+Uint                0x1000            disk.o
+file_table          0x900             disk.o
+
+Discarded input sections
+
+ .comment       0x00000000       0x80 kernelmain.o
+ .comment       0x00000000       0x80 console.o
+ .comment       0x00000000       0x80 testsuite.o
+ .comment       0x00000000       0x80 kprintf.o
+ .comment       0x00000000       0x80 disk.o
+ .comment       0x00000000       0x80 interrupt.o
+ .comment       0x00000000       0x80 exec.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00010000                . = 0x10000
+
+.text           0x00010000    0x12fc0
+                0x00010000                stext = .
+ *(.text)
+ .text          0x00010000        0xc kernelasm.o
+ .text          0x0001000c      0x14c interruptasm.o
+                0x0001000c                itable_start
+                0x00010050                itable_end
+ .text          0x00010158       0x40 kernelmain.o
+                0x00010158                kmain
+ .text          0x00010198      0x3cc console.o
+                0x00010198                console_init
+                0x000101e0                set_pixel
+                0x0001020c                set_character
+                0x00010290                set_string
+                0x000102cc                console_putc
+                0x00010524                kmemset
+                0x00010540                kmemcopy
+ .text          0x00010564      0x388 testsuite.o
+                0x000105f8                displayPPM
+                0x0001083c                sweet
+ .text          0x000108ec     0x1098 kprintf.o
+                0x00011940                kprintf
+                0x00011964                ksprintf
+ .text          0x00011984      0xba0 disk.o
+                0x00011984                isBusy
+                0x00011994                disk_read_sector
+                0x00011a04                disk_init
+                0x00011adc                disk_write_sector
+                0x00011b4c                read_block
+                0x00011b7c                kdiv
+                0x00011bc4                kmod
+                0x00011bfc                disk_read_block_partial
+                0x00011c54                disk_read_inode
+                0x00011d64                disk_read_block
+                0x00011de8                kmemcmp
+                0x00011e44                kstrlen
+                0x00011e6c                disk_get_file_inode
+                0x00011fcc                file_open
+                0x00012054                file_close
+                0x0001207c                file_read
+                0x0001249c                file_write
+                0x000124a4                file_seek
+ .text          0x00012524      0x750 interrupt.o
+                0x00012524                interrupt_init
+                0x0001259c                keyboard_interrupt
+                0x00012a68                sti
+                0x00012a78                halt
+                0x00012a84                keyboard_getline
+                0x00012b04                handler_prefetchabort_c
+                0x00012b10                handler_undefinded_c
+                0x00012b1c                handler_dataabort_c
+                0x00012b28                handler_reserved_c
+                0x00012b34                handler_irq_c
+                0x00012b78                handler_fig_c
+                0x00012b84                handler_svc_c
+ .text          0x00012c74       0x7c exec.o
+                0x00012c74                execute
+ *(.rodata)
+ .rodata        0x00012cf0       0x20 kprintf.o
+ *(.rdata)
+ *(.rdata$zzz)
+                0x00012d10                etext = .
+                0x00013000                . = ALIGN (ABSOLUTE (.), 0x1000)
+ *fill*         0x00012d10      0x2f0 
+                0x00013000                _sdata = .
+                0x00013000                sdata = .
+ *(.data)
+ .data          0x00013000     0x1000 kernelasm.o
+ .data          0x00014000     0x7000 interruptasm.o
+ .data          0x0001b000        0x0 kernelmain.o
+ .data          0x0001b000     0x1410 console.o
+                0x0001b000                font_data
+                0x0001c400                columns
+                0x0001c404                serialflags
+                0x0001c408                serialport
+                0x0001c40c                rows
+ .data          0x0001c410        0x0 testsuite.o
+ .data          0x0001c410        0x0 kprintf.o
+ .data          0x0001c410        0x0 disk.o
+ .data          0x0001c410        0x0 interrupt.o
+ .data          0x0001c410        0x0 exec.o
+                0x0001c410                _edata = .
+                0x0001c410                edata = .
+                0x0001c410                _sbss = .
+                0x0001c410                sbss = .
+ *(COMMON)
+ COMMON         0x0001c410     0x1d80 disk.o
+                0x0001c410                rootInode
+                0x0001c490                superblock
+                0x0001c890                Uint
+                0x0001d890                file_table
+ *(.bss)
+ .bss           0x0001e190        0x0 kernelasm.o
+ .bss           0x0001e190        0x0 interruptasm.o
+ .bss           0x0001e190        0x0 kernelmain.o
+ .bss           0x0001e190        0x8 console.o
+                0x0001e190                curRow
+                0x0001e194                curCol
+ .bss           0x0001e198     0x1e00 testsuite.o
+ .bss           0x0001ff98        0x0 kprintf.o
+ .bss           0x0001ff98     0x3000 disk.o
+ .bss           0x00022f98       0x28 interrupt.o
+                0x00022f98                lastWasF0
+                0x00022f9c                shifted
+                0x00022fbc                timer
+ .bss           0x00022fc0        0x0 exec.o
+                0x00022fc0                _ebss = .
+                0x00022fc0                ebss = .
+
+.glue_7         0x00022fc0        0x0
+ .glue_7        0x00022fc0        0x0 linker stubs
+
+.glue_7t        0x00022fc0        0x0
+ .glue_7t       0x00022fc0        0x0 linker stubs
+
+.vfp11_veneer   0x00022fc0        0x0
+ .vfp11_veneer  0x00022fc0        0x0 linker stubs
+
+.v4_bx          0x00022fc0        0x0
+ .v4_bx         0x00022fc0        0x0 linker stubs
+
+.iplt           0x00022fc0        0x0
+ .iplt          0x00022fc0        0x0 kernelasm.o
+
+.igot.plt       0x00022fc0        0x0
+ .igot.plt      0x00022fc0        0x0 kernelasm.o
+
+.rel.dyn        0x00022fc0        0x0
+ .rel.iplt      0x00022fc0        0x0 kernelasm.o
+
+.rodata.str1.4  0x00022fc0      0x15c
+ .rodata.str1.4
+                0x00022fc0        0xc kernelmain.o
+ .rodata.str1.4
+                0x00022fcc       0xb0 testsuite.o
+ .rodata.str1.4
+                0x0002307c       0x2c kprintf.o
+ .rodata.str1.4
+                0x000230a8       0x74 interrupt.o
+                                 0x75 (size before relaxing)
+
+/DISCARD/
+ *(.eh_frame)
+ *(.comment)
+LOAD kernelasm.o
+LOAD interruptasm.o
+LOAD kernelmain.o
+LOAD console.o
+LOAD testsuite.o
+LOAD kprintf.o
+LOAD disk.o
+LOAD interrupt.o
+LOAD exec.o
+OUTPUT(kernel.tmp elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x2e
+ .ARM.attributes
+                0x00000000       0x22 kernelasm.o
+ .ARM.attributes
+                0x00000022       0x22 interruptasm.o
+ .ARM.attributes
+                0x00000044       0x32 kernelmain.o
+ .ARM.attributes
+                0x00000076       0x32 console.o
+ .ARM.attributes
+                0x000000a8       0x32 testsuite.o
+ .ARM.attributes
+                0x000000da       0x32 kprintf.o
+ .ARM.attributes
+                0x0000010c       0x32 disk.o
+ .ARM.attributes
+                0x0000013e       0x32 interrupt.o
+ .ARM.attributes
+                0x00000170       0x32 exec.o

@@ -1,0 +1,10 @@
+﻿  huff.cpp
+c:\users\chase_000\desktop\optimization\lab 3\lab3optimizationsln\lab3optimizationsln\bitstream.h(64): warning C4244: 'return': conversion from 'std::streamoff' to '::size_t', possible loss of data
+huff.cpp(91): warning C4101: 'length': unreferenced local variable
+  Generating code
+  0 of 534 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    36 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Lab3OptimizationSLN.vcxproj -> C:\Users\chase_000\Desktop\OPTIMIZATION\Lab 3\Lab3OptimizationSLN\Release\Lab3OptimizationSLN.exe
+  Lab3OptimizationSLN.vcxproj -> C:\Users\chase_000\Desktop\OPTIMIZATION\Lab 3\Lab3OptimizationSLN\Release\Lab3OptimizationSLN.pdb (Full PDB)

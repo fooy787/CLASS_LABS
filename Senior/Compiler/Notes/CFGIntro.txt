@@ -1,0 +1,28 @@
+Brakus Nauger Form (BNF form).
+
+if-> IF LP ID EQ NUM RP LB stmts RB e
+e-> else LB stmts RB | lambda
+
+ID ::= <\w+>
+NUM ::= <\d+>
+IF ::= \bif\b
+ELSE ::= \belse\b
+
+
+D -> \d+
+A -> [-+*/]
+s-> D| S A D | lambda | M
+M -> DDDDD
+
+OUTPUT
+S 4
+M 1
+5 S -> D D D D D
+
+class Grammar {
+	class Production:List<string>{};
+	Dictionary <string, List<Production>> D;
+	//nonterminal, Production
+	//lambda is an empty list, not an actual variable
+	//For D
+	//D["S"]= [ ['D'], ['S', 'A', 'D'], [], ['M'] ]

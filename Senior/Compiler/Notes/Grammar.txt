@@ -1,0 +1,17 @@
+1 :) 2 :) 3
+Left associatiive: (1 :) 2) :) 3
+Right assoeciative 1 :) (2 :) 3)
+
+High *
+
+
+
+Low +
+Lower <
+
+U -> net U | F
+R -> S > S | S
+S -> S + P | P
+P -> P * O | O
+F -> ID | NUM | (S)
+O -> U pow O | U

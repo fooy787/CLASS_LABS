@@ -1,0 +1,219 @@
+## Player class
+import math3d
+import pygame
+import math
+import time
+import Level
+down = (0, 2)
+left = (3, 4)
+right = (5, 6)
+up = (7, 9)
+
+win_size = (1000, 600)
+win = pygame.display.set_mode(win_size)
+
+class Player(object):
+    def __init__(self, pos):
+        self.mPos = pos
+        self.mHealth = 100
+        self.maxHealth = self.mHealth
+        self.direction = "D"
+        self.vel = 200.0
+        self.imgList = []
+        self.radius = 25
+
+        self.startString = "art/sprites/player/bob"
+
+        # Animation stuffs
+        for i in range(0, 10):
+            self.img = pygame.image.load(self.startString + str(i) + ".png").convert()
+            self.img.set_colorkey((255, 255, 255))
+            self.imgList.append(self.img)
+        self.index = 3
+        self.current = self.imgList[self.index]
+        self.FRAME_DELAY = 0.08
+        self.cur_frame_delay = self.FRAME_DELAY
+
+        self.renPos = self.mPos - math3d.VectorN(self.current.get_size()) / 2 # Creates a point to render enemies at
+        
+        
+    
+    def update(self, dt, vel):
+        vel = vel.normalized_copy() * self.vel
+        self.prev_pos = self.mPos # makes sure the player doesn't get stuck in walls
+        self.mPos += vel * dt
+        self.renPos = self.mPos - math3d.VectorN(self.current.get_size()) / 2
+               
+        #Moving Left Images
+        if self.direction == "L":
+            self.cur_frame_delay -= dt
+            if self.cur_frame_delay <= 0:
+                self.cur_frame_delay += self.FRAME_DELAY
+                self.index += 1
+                if self.index > 4:
+                    self.index = 3
+                self.current = self.imgList[self.index]
+
+        #Moving Right Images
+        elif self.direction == "R":
+            self.cur_frame_delay -= dt
+            if self.cur_frame_delay <= 0:
+                self.cur_frame_delay += self.FRAME_DELAY
+                self.index += 1
+                if self.index > 6:
+                    self.index = 5
+                self.current = self.imgList[self.index]
+            
+
+        #Moving Up Images
+        elif self.direction == "U":
+            self.cur_frame_delay -= dt
+            if self.cur_frame_delay <= 0:
+                self.cur_frame_delay += self.FRAME_DELAY
+                self.index += 1
+                if self.index > 9:
+                    self.index = 7
+                self.current = self.imgList[self.index]
+                
+        #Moving Down Images
+        elif self.direction == "D":
+            self.cur_frame_delay -= dt
+            if self.cur_frame_delay <= 0:
+                self.cur_frame_delay += self.FRAME_DELAY
+                self.index += 1
+                if self.index > 2:
+                    self.index = 0
+                self.current = self.imgList[self.index]
+        
+
+        if self.mPos[0] < 0 or self.mPos[0] > 1000:
+            self.mPos = self.prev_pos
+        if self.mPos[1] < 0 or self.mPos[1] > 600:
+            self.mPos = self.prev_pos        
+
+            
+    def render(self, surf):
+        surf.blit(self.current, self.renPos)
+        # Health bar
+        x = 20
+        y = 20
+        w = self.mHealth / self.maxHealth * 350
+        pygame.draw.rect(win, (0, 255, 0), (int(x), int(y), int(w), 30))
+        #Test circle for hit detection
+        #pygame.draw.circle(win, (255, 255, 0), (int(self.mPos[0]), int(self.mPos[1])), self.radius, 2)
+        
+class bullet(object):
+    def __init__(self, vel):
+        self.bPos = Level.player.mPos
+        self.radius = 10
+        self.bVel = vel # gets vel from firing() in main game
+
+    def update(self, dt):
+        self.bPos += self.bVel * dt
+
+    def render(self, win):
+        pygame.draw.circle(win, (50, 50, 50), (int(self.bPos[0]), int(self.bPos[1])), self.radius)
+
+
+class UpgradedPlayer (object):
+    def __init__(self, pos):
+        self.mPos = pos
+        self.mHealth = 100
+        self.maxHealth = self.mHealth
+        self.direction = "D"
+        self.vel = 250.0
+        self.imgList = []
+        self.radius = 25
+
+        self.startString = "art/sprites/upgraded_player/bob"
+
+        for i in range(0, 10):
+            self.img = pygame.image.load(self.startString + str(i) + ".png").convert()
+            self.img.set_colorkey((255, 255, 255))
+            self.imgList.append(self.img)
+        self.index = 3
+        self.current = self.imgList[self.index]
+        self.FRAME_DELAY = 0.08
+        self.cur_frame_delay = self.FRAME_DELAY
+
+        self.renPos = self.mPos - math3d.VectorN(self.current.get_size()) / 2 # Creates a point to render enemies at
+        
+        
+    
+    def update(self, dt, vel):
+        vel = vel.normalized_copy() * self.vel
+        self.prev_pos = self.mPos
+        self.mPos += vel * dt
+        self.renPos = self.mPos - math3d.VectorN(self.current.get_size()) / 2
+               
+        #Moving Left Images
+        if self.direction == "L":
+            self.cur_frame_delay -= dt
+            if self.cur_frame_delay <= 0:
+                self.cur_frame_delay += self.FRAME_DELAY
+                self.index += 1
+                if self.index > 4:
+                    self.index = 3
+                self.current = self.imgList[self.index]
+
+        #Moving Right Images
+        elif self.direction == "R":
+            self.cur_frame_delay -= dt
+            if self.cur_frame_delay <= 0:
+                self.cur_frame_delay += self.FRAME_DELAY
+                self.index += 1
+                if self.index > 6:
+                    self.index = 5
+                self.current = self.imgList[self.index]
+            
+
+        #Moving Up Images
+        elif self.direction == "U":
+            self.cur_frame_delay -= dt
+            if self.cur_frame_delay <= 0:
+                self.cur_frame_delay += self.FRAME_DELAY
+                self.index += 1
+                if self.index > 9:
+                    self.index = 7
+                self.current = self.imgList[self.index]
+                
+        #Moving Down Images
+        elif self.direction == "D":
+            self.cur_frame_delay -= dt
+            if self.cur_frame_delay <= 0:
+                self.cur_frame_delay += self.FRAME_DELAY
+                self.index += 1
+                if self.index > 2:
+                    self.index = 0
+                self.current = self.imgList[self.index]
+        
+
+        if self.mPos[0] < 0 or self.mPos[0] > 1000:
+            self.mPos = self.prev_pos
+        if self.mPos[1] < 0 or self.mPos[1] > 600:
+            self.mPos = self.prev_pos        
+
+            
+    def render(self, surf):
+        surf.blit(self.current, self.renPos)
+        # Health bar
+        x = 20
+        y = 20
+        w = self.mHealth / self.maxHealth * 350
+        pygame.draw.rect(win, (0, 255, 0), (int(x), int(y), int(w), 30))
+        #Test circle for hit detection
+        #pygame.draw.circle(win, (255, 255, 0), (int(self.mPos[0]), int(self.mPos[1])), self.radius, 2)    
+
+class SteamBullet(object):
+    def __init__(self, vel, imgN): # imgN (from firing() in main) determines the horizontal/diagonal tilt of the bullet
+        self.bPos = Level.player.mPos
+        self.radius = 10
+        self.bVel = vel
+        self.img = pygame.image.load('art/sprites/sale_bullet' + str(imgN) + '.png')
+        
+    def update(self, dt):
+        self.bPos += self.bVel * dt
+        self.renPos = self.bPos - math3d.VectorN(self.img.get_size()) / 2
+
+    def render(self, win):
+        win.blit(self.img, self.bPos)

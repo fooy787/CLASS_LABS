@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1523924119 source:c:\users\chase_000\desktop\networking c\lab 8\main.c
+	<winsock2.h>
+	<stdio.h>
+

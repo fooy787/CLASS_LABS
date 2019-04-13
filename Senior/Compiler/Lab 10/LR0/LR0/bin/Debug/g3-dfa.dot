@@ -1,0 +1,17 @@
+digraph d{
+node [shape=box];
+n0 [label=<0<br/>S'&rarr;&bull; S <br/>S&rarr;&bull; A B <br/>S&rarr;&bull; A z <br/>S&rarr;&bull; B z <br/>A&rarr;&bull; y z <br/>A&rarr;&bull; x <br/>B&rarr;&bull; y B <br/>B&rarr;&bull; <br/>>];n1 [label=<1<br/>S'&rarr;S &bull; <br/>>];n4 [label=<4<br/>S&rarr;A &bull; B <br/>S&rarr;A &bull; z <br/>B&rarr;&bull; y B <br/>B&rarr;&bull; <br/>>];n5 [label=<5<br/>S&rarr;A B &bull; <br/>>];n6 [label=<6<br/>S&rarr;A z &bull; <br/>>];n7 [label=<7<br/>B&rarr;y &bull; B <br/>B&rarr;&bull; y B <br/>B&rarr;&bull; <br/>>];n8 [label=<8<br/>B&rarr;y B &bull; <br/>>];n11 [label=<11<br/>A&rarr;x &bull; <br/>>];n9 [label=<9<br/>A&rarr;y &bull; z <br/>B&rarr;y &bull; B <br/>B&rarr;&bull; y B <br/>B&rarr;&bull; <br/>>];n10 [label=<10<br/>A&rarr;y z &bull; <br/>>];n2 [label=<2<br/>S&rarr;B &bull; z <br/>>];n3 [label=<3<br/>S&rarr;B z &bull; <br/>>];n0->n1 [label="S"];
+n0->n4 [label="A"];
+n0->n2 [label="B"];
+n0->n9 [label="y"];
+n0->n11 [label="x"];
+n2->n3 [label="z"];
+n9->n10 [label="z"];
+n9->n8 [label="B"];
+n9->n7 [label="y"];
+n7->n8 [label="B"];
+n7->n7 [label="y"];
+n4->n5 [label="B"];
+n4->n6 [label="z"];
+n4->n7 [label="y"];
+}

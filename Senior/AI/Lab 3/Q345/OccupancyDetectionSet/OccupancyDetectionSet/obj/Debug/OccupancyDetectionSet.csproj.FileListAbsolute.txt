@@ -1,0 +1,6 @@
+C:\Users\chase_000\Desktop\AI\Lab 3\Q345\OccupancyDetectionSet\OccupancyDetectionSet\bin\Debug\OccupancyDetectionSet.exe
+C:\Users\chase_000\Desktop\AI\Lab 3\Q345\OccupancyDetectionSet\OccupancyDetectionSet\bin\Debug\OccupancyDetectionSet.pdb
+C:\Users\chase_000\Desktop\AI\Lab 3\Q345\OccupancyDetectionSet\OccupancyDetectionSet\obj\Debug\OccupancyDetectionSet.csprojAssemblyReference.cache
+C:\Users\chase_000\Desktop\AI\Lab 3\Q345\OccupancyDetectionSet\OccupancyDetectionSet\obj\Debug\OccupancyDetectionSet.csproj.CoreCompileInputs.cache
+C:\Users\chase_000\Desktop\AI\Lab 3\Q345\OccupancyDetectionSet\OccupancyDetectionSet\obj\Debug\OccupancyDetectionSet.exe
+C:\Users\chase_000\Desktop\AI\Lab 3\Q345\OccupancyDetectionSet\OccupancyDetectionSet\obj\Debug\OccupancyDetectionSet.pdb

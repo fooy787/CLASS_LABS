@@ -1,0 +1,30 @@
+Turing Machine
+
+Alonzo Church
+Alon Church
+
+Turing complete, there is no problem you can express in one language you cant express in another.
+Nonterminal = variable
+Non(nonterminal) = non-variable
+
+Produce
+X-> a, b, c
+Y-> X bY
+
+(?m)^foo$               <---- if regez begins with this: multiline mode and looks for a line containing only foo
+
+\s looks for a space and \b is boundary
+
+!(?!=)
+^ ^^^^ not followed by an = sign
+must have exlcamation
+
+when specifying regex's in c# put @ sign at the start so you can do it the ez way
+
+IDENTIFIER -> \wt
+NUMBER -> \dt
+IF -> \bif\b
+ARROW-> ->
+IF -> if
+
+USE .net Foundation and NOT .net Core

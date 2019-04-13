@@ -1,0 +1,4 @@
+﻿  SSE8.cpp
+c:\users\chase_000\desktop\optimization\sse8\sse8\sse8\wave.h(93): warning C4244: 'initializing': conversion from 'std::streamoff' to '::size_t', possible loss of data
+  SSE8.vcxproj -> C:\Users\chase_000\Desktop\OPTIMIZATION\SSE8\SSE8\Debug\SSE8.exe
+  SSE8.vcxproj -> C:\Users\chase_000\Desktop\OPTIMIZATION\SSE8\SSE8\Debug\SSE8.pdb (Partial PDB)

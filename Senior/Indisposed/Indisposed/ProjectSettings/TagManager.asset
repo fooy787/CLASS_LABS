@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - toTownTeleporter
+  - blackScreen
+  - up
+  - down
+  - left
+  - right
+  - playerBed
+  - chest
+  - bucket
+  - potion
+  - fireplace
+  - ax
+  - broom
+  - dresser
+  - nightstand
+  - butterChurn
+  - crock
+  - brotherBed
+  - interactionTextBox
+  - interactionPanel
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

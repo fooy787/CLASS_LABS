@@ -1,0 +1,11 @@
+fc -> ID LP fc'
+fc'->NUM fc'' | RP
+fc''-> RP|COMMMA NUM RP
+
+x -> Y|s|t|y|v
+Y -> Z|r
+Z -> lambda|q
+
+keepLooping = true'
+let nullable = empty set
+while keeplooping:

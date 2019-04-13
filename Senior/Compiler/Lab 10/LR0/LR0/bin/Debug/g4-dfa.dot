@@ -1,0 +1,11 @@
+digraph d{
+node [shape=box];
+n0 [label=<0<br/>S'&rarr;&bull; S <br/>S&rarr;&bull; assign <br/>S&rarr;&bull; func-call <br/>assign&rarr;&bull; id = num <br/>func-call&rarr;&bull; id ( ) <br/>>];n7 [label=<7<br/>S&rarr;func-call &bull; <br/>>];n1 [label=<1<br/>S&rarr;assign &bull; <br/>>];n2 [label=<2<br/>assign&rarr;id &bull; = num <br/>func-call&rarr;id &bull; ( ) <br/>>];n3 [label=<3<br/>func-call&rarr;id ( &bull; ) <br/>>];n4 [label=<4<br/>func-call&rarr;id ( ) &bull; <br/>>];n5 [label=<5<br/>assign&rarr;id = &bull; num <br/>>];n6 [label=<6<br/>assign&rarr;id = num &bull; <br/>>];n8 [label=<8<br/>S'&rarr;S &bull; <br/>>];n0->n8 [label="S"];
+n0->n1 [label="assign"];
+n0->n7 [label="func-call"];
+n0->n2 [label="id"];
+n2->n5 [label="="];
+n2->n3 [label="("];
+n5->n6 [label="num"];
+n3->n4 [label=")"];
+}

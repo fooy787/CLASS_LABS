@@ -1,0 +1,5 @@
+﻿  SSE2_SIMDcpp.cpp
+c:\users\chase_000\desktop\optimization\lab 5\sse2\sse2\image.h(45): warning C4244: 'argument': conversion from 'std::streamoff' to 'const unsigned int', possible loss of data
+c:\users\chase_000\desktop\optimization\lab 5\sse2\sse2\sse2_simdcpp.cpp(25): warning C4316: 'XMMInt': object allocated on the heap may not be aligned 16
+  SSE2.vcxproj -> C:\Users\chase_000\Desktop\OPTIMIZATION\Lab 5\SSE2\Debug\SSE2.exe
+  SSE2.vcxproj -> C:\Users\chase_000\Desktop\OPTIMIZATION\Lab 5\SSE2\Debug\SSE2.pdb (Partial PDB)

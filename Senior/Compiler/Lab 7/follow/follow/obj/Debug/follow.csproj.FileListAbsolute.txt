@@ -1,0 +1,6 @@
+C:\Users\chase_000\Desktop\Compiler\Lab 7\follow\follow\obj\Debug\follow.csprojResolveAssemblyReference.cache
+C:\Users\chase_000\Desktop\Compiler\Lab 7\follow\follow\obj\Debug\follow.csproj.CoreCompileInputs.cache
+C:\Users\chase_000\Desktop\Compiler\Lab 7\follow\follow\bin\Debug\follow.exe
+C:\Users\chase_000\Desktop\Compiler\Lab 7\follow\follow\bin\Debug\follow.pdb
+C:\Users\chase_000\Desktop\Compiler\Lab 7\follow\follow\obj\Debug\follow.exe
+C:\Users\chase_000\Desktop\Compiler\Lab 7\follow\follow\obj\Debug\follow.pdb

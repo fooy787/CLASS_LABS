@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1525381153 source:c:\users\chase_000\desktop\networking c\lab 7\server.c
+	"server.h"
+
+1525378699 c:\users\chase_000\desktop\networking c\lab 7\server.h
+	<stdio.h>
+	<winsock2.h>
+	<stdlib.h>
+

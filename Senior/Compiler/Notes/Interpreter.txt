@@ -1,0 +1,13 @@
+on slides for aof" if len(ch) == 1 needs to be 2
+
+s ->
+a-o-f -> ID EQ e | HALT LP RP | WRITE LP E RP ID
+HALT -> \bhalt\b
+WRITE -> \bwrite\b
+
+elif t == "cond":
+	evaluate expr #interpret(ch[2])
+	if value !=0:
+		interpret(ch[5])
+	else:
+		interpret(ch[7])

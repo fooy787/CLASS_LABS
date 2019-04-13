@@ -1,0 +1,17 @@
+-Left Factor
+-Left Recursion
+LL-> Top Down
+-Common prefixes -> a-o-f
+
+LR-> bottom up
+
+S'-> S
+S-> a
+s-> X
+
+S'-> +S -> x-> S-> x+
+S-> +x -> a -> S ->a+
+S-> +a -> S -> S' -> S+
+
+
+

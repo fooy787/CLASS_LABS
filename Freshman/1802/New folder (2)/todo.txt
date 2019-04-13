@@ -1,0 +1,61 @@
+
+PROGRAMMING:
+-[x]cleaner code/ability to use different python files
+-[x]movement/animation - Chase
+-[x]enemy movement
+-[x]player firing
+-[x]level class
+-[x]transition between levels/level change
+-[x]cutscenes
+-[x]enemy healthbars
+-[x]player healthbar
+-[x]enemy spawn
+-[]fix player sprite bug
+-[]better enemy/player hit detection (needs player sprite bug fixed first)
+-[]diagonal movement
+-[]player respawn upon death
+-[]boss
+
+
+
+
+ART:
+(level size is (1000, 600))
+-[x]mothers head cutscene
+-[x]missing computer desk cutscene
+-[x]enemies in starway cutscene
+-[]glorious pc at desk
+-[]mech console sprites
+-[x]intro cutscenes
+-[x]pressure Abby's boyfriend into making sprites for the console mechs
+	-each mech needs a front, left, and right facing model. The mech's arms should be saved as separate files so we can rotate them
+-[x]resize all of the already finished images
+-[x]Major Nelson sprite
+	-make sprite for all directions
+-[]make processor (level)
+-[x]make sniper kid (sprite)
+-[x]make Lord Gaben (sprite)
+-[x]make new character sprite with new gun aquired by Lord Gaben
+-[]download and resize gaben.tv video
+-[]download and resize AWOLGABEN video
+-[]shoot and edit our own video
+-[]better title
+-[x]steam sale player bullet
+
+
+
+
+AUDIO:
+-[]Level 1 - 5 music (old shit)
+-[]Level 6 music (loud dubstep)
+-[]Level 7 music (Darude - Sandstorm)
+-[]Level 8 music (sad electronic/dupstep)
+-[]Level 9 music (upbeat dupsetep that is louder)
+-[X]Boss Battle Moozik (Luminous Sword)
+-[]"GET NO SCOPED!" kid voice
+-[X]bullet fire
+-[]Gaben gun bullet fires
+-[]Major Nelson battle music
+-[]xbox mech bullet fire
+-[]ps3 mech bullet fire
+-[]wii bullet fire

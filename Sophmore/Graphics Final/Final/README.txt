@@ -1,0 +1,1 @@
+I tried to get the ground to work, and I even went to jason and emailed you about it. Jason said everything looked right but for some reason it's not rendering. --Chase

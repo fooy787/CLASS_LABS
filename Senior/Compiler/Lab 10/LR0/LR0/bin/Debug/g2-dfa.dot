@@ -1,0 +1,7 @@
+digraph d{
+node [shape=box];
+n0 [label=<0<br/>S'&rarr;&bull; S <br/>S&rarr;&bull; A <br/>S&rarr;&bull; x <br/>A&rarr;&bull; b <br/>>];n1 [label=<1<br/>S&rarr;A &bull; <br/>>];n2 [label=<2<br/>A&rarr;b &bull; <br/>>];n3 [label=<3<br/>S'&rarr;S &bull; <br/>>];n4 [label=<4<br/>S&rarr;x &bull; <br/>>];n0->n3 [label="S"];
+n0->n1 [label="A"];
+n0->n4 [label="x"];
+n0->n2 [label="b"];
+}

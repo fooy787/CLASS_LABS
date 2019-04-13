@@ -1,0 +1,12 @@
+ADDOP -> [-+]
+MULOP -> [*/]
+NUM -> \d+
+LP -> [(]
+RP -> [)]
+ID -> \w+
+
+
+S -> a | A b B | B C e 
+A -> x | C y 
+B -> C C | q 
+C -> lambda | w

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLTable", "LLTable\LLTable.csproj", "{CEAB4F5A-375A-413D-B439-668B87F00FDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEAB4F5A-375A-413D-B439-668B87F00FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEAB4F5A-375A-413D-B439-668B87F00FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEAB4F5A-375A-413D-B439-668B87F00FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEAB4F5A-375A-413D-B439-668B87F00FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05240666-FC5B-4F15-BC71-BF2C2190A1B9}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+C:\Users\chase_000\Desktop\Compiler\Lab1\Lab1\bin\Debug\Lab1.exe
+C:\Users\chase_000\Desktop\Compiler\Lab1\Lab1\bin\Debug\Lab1.pdb
+C:\Users\chase_000\Desktop\Compiler\Lab1\Lab1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
+C:\Users\chase_000\Desktop\Compiler\Lab1\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
+C:\Users\chase_000\Desktop\Compiler\Lab1\Lab1\obj\Debug\Lab1.exe
+C:\Users\chase_000\Desktop\Compiler\Lab1\Lab1\obj\Debug\Lab1.pdb
